@@ -8,6 +8,21 @@ const init = async () => {
 		host: 'localhost',
 	})
 
+	server.route({
+		method: 'POST',
+		path: '/slack/events',
+		handler: (request) => {
+			const {
+				challenge = 'welp',
+			} = request.payload
+
+			console.log('🤨 query\n➥', request.query)
+			console.log('🚛 payload\n➥', request.payload)
+
+			return challenge
+		},
+	})
+
 	await server.start()
 	console.log(`😎 Server running on ${server.info.uri}`)
 }
