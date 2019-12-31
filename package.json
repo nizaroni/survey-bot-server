@@ -1,0 +1,22 @@
+{
+  "name": "survey-bot-server",
+  "version": "1.0.0",
+  "description": "Slack bot for moderating survey requests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nizaroni/survey-bot-server.git"
+  },
+  "author": "Nizar Khalife <khalifenizar@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nizaroni/survey-bot-server/issues"
+  },
+  "homepage": "https://github.com/nizaroni/survey-bot-server#readme",
+  "dependencies": {
+    "@hapi/hapi": "^18.4.0"
+  }
+}
