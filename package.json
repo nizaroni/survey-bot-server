@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/nizaroni/survey-bot-server#readme",
   "dependencies": {
+    "@hapi/boom": "^9.0.0",
     "@hapi/hapi": "^18.4.0",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "tsscmp": "^1.0.6"
   }
 }
