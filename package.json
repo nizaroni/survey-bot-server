@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "npx nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "lab --coverage --shuffle --verbose **/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,9 @@
     "@hapi/hapi": "^18.4.0",
     "dotenv": "^8.2.0",
     "tsscmp": "^1.0.6"
+  },
+  "devDependencies": {
+    "@hapi/code": "^8.0.1",
+    "@hapi/lab": "^22.0.3"
   }
 }
